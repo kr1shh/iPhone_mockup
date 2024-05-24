@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(22, 22, 22);
 }
 
 .container {
@@ -23,6 +23,7 @@ html {
   justify-content: center;
   box-shadow: inset 0 0 3px 1px #fff;
   filter: drop-shadow(12px 19px 16px #000000);
+  animation: anim 500ms ease-in-out forwards;
 }
 .container .iphone_mockup .notch {
   position: absolute;
@@ -100,6 +101,7 @@ html {
 }
 .container .iphone_mockup .iphone_border {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
@@ -113,6 +115,14 @@ html {
   border: 8px solid black;
   z-index: 30;
   position: relative;
+}
+.container .iphone_mockup .iphone_border .status_bar {
+  position: absolute;
+  top: 3px;
+  width: 100%;
+}
+.container .iphone_mockup .iphone_border .status_bar img {
+  width: 100%;
 }
 .container .iphone_mockup .iphone_border .doc {
   position: absolute;
@@ -156,4 +166,15 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=index.css.map */
