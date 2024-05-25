@@ -113,11 +113,17 @@ html {
             position: absolute;
             z-index: 50;
             bottom: 20px;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             width: 40%;
             height: 4px;
             border-radius: 20px;
             display: none;
+            mix-blend-mode: difference;
+            cursor: pointer;
+
+            &.open{
+                display: block;
+            }
         }
 
         .iphone_border {
@@ -136,6 +142,7 @@ html {
             border: 8px solid black;
             z-index: 30;
             position: relative;
+            overflow: hidden;
 
             .status_bar{
                 position: absolute;
@@ -201,9 +208,11 @@ html {
                 width: 100%;
                 height: 85%;
                 display: flex;
-                a{
-                    text-decoration: none;
-                    color: white;
+                
+                .app_container{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
 
                     &:nth-child(1){
                         .app{
@@ -221,24 +230,120 @@ html {
                             background-size: cover;
                         }
                     }
-                }
-                
-                .app_container{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin: 10px;
 
                     .app{
                         width: 55px;
                         height: 55px;
                         background-color: black;
                         border-radius: 10px;
+                        cursor: pointer;
                     }
                     span{
                         text-align: center;
                         font-size: 10px;
+                    }
+                }
+            }
+
+            .open_app_section{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: white;
+                animation: anim 300ms ease-in-out forwards;
+
+                &.open{
+                    display: block;
+                }
+
+                &.close{
+                    display: none;
+                }
+
+
+                .open_status{
+                    position: fixed;
+                    top: 03px;
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .software_training{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: black;
+                    width: 100%;
+                    margin-top: 60px;
+                    display: none;
+                    &.open{
+                        display: flex;
+                    }
+
+                    .st_icon{
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .course_content{
+                        margin-top: 30px;
+                        ul{
+                            margin: 0;
+
+                            li{
+                                &::marker{
+                                    color: #673bb7;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hardware_training{
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: black;
+                    width: 100%;
+                    margin-top: 60px;
+                    display: none;
+                    overflow: auto;
+                    max-height: calc(100vh - 60px);
+                    &.open{
+                        display: flex;
+                    }
+
+                    .st_icon{
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .course_content{
+                        margin-top: 30px;
+                        ul{
+                            margin: 0;
+
+                            li{
+                                &::marker{
+                                    color: #673bb7;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -248,6 +353,18 @@ html {
 
 
 @keyframes anim {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop_up {
     from{
         opacity: 0;
         transform: translateY(30px);
