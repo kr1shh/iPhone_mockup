@@ -21,6 +21,7 @@ html {
   justify-content: center;
   font-family: "sf-pro";
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 .container .iphone_mockup {
   position: relative;
@@ -35,6 +36,12 @@ html {
   filter: drop-shadow(12px 19px 16px #000000);
   animation: anim 500ms ease-in-out forwards;
 }
+@media (min-width: 769px) {
+  .container .iphone_mockup {
+    width: 640px;
+    height: 320px;
+  }
+}
 .container .iphone_mockup .notch {
   position: absolute;
   display: flex;
@@ -47,6 +54,13 @@ html {
   top: 18px;
   border-radius: 50px;
   gap: 5px;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .notch {
+    right: -24px;
+    transform: rotate(90deg);
+    top: 140px;
+  }
 }
 .container .iphone_mockup .notch .speaker {
   width: 40px;
@@ -76,6 +90,13 @@ html {
   background: linear-gradient(90deg, transparent, #99840a);
   border-radius: 10px 20px 20px 10px;
 }
+@media (min-width: 769px) {
+  .container .iphone_mockup .power_btn {
+    transform: rotate(90deg);
+    right: 248px;
+    top: 281px;
+  }
+}
 .container .iphone_mockup .volume_btn {
   position: absolute;
   z-index: 50;
@@ -86,6 +107,13 @@ html {
   justify-content: center;
   gap: 10px;
   flex-direction: column;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .volume_btn {
+    transform: rotate(90deg);
+    left: 434px;
+    top: -51px;
+  }
 }
 .container .iphone_mockup .volume_btn .up {
   width: 3px;
@@ -132,10 +160,24 @@ html {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border {
+    width: 615px;
+    height: 295px;
+  }
+}
 .container .iphone_mockup .iphone_border .status_bar {
   position: absolute;
   top: 3px;
   width: 100%;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .status_bar {
+    width: 325px;
+    transform: rotate(90deg);
+    top: 120px;
+    right: -139px;
+  }
 }
 .container .iphone_mockup .iphone_border .status_bar img {
   width: 100%;
