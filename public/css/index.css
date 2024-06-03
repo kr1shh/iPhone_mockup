@@ -38,8 +38,9 @@ html {
 }
 @media (min-width: 769px) {
   .container .iphone_mockup {
-    width: 640px;
-    height: 320px;
+    width: 90%;
+    height: 90%;
+    padding: 13px 5px;
   }
 }
 .container .iphone_mockup .notch {
@@ -57,9 +58,7 @@ html {
 }
 @media (min-width: 769px) {
   .container .iphone_mockup .notch {
-    right: -24px;
-    transform: rotate(90deg);
-    top: 140px;
+    top: 20px;
   }
 }
 .container .iphone_mockup .notch .speaker {
@@ -94,7 +93,8 @@ html {
   .container .iphone_mockup .power_btn {
     transform: rotate(90deg);
     right: 248px;
-    top: 281px;
+    bottom: -42px;
+    top: auto;
   }
 }
 .container .iphone_mockup .volume_btn {
@@ -162,8 +162,8 @@ html {
 }
 @media (min-width: 769px) {
   .container .iphone_mockup .iphone_border {
-    width: 615px;
-    height: 295px;
+    width: 100%;
+    height: 100%;
   }
 }
 .container .iphone_mockup .iphone_border .status_bar {
@@ -174,9 +174,6 @@ html {
 @media (min-width: 769px) {
   .container .iphone_mockup .iphone_border .status_bar {
     width: 325px;
-    transform: rotate(90deg);
-    top: 120px;
-    right: -139px;
   }
 }
 .container .iphone_mockup .iphone_border .status_bar img {
@@ -266,9 +263,11 @@ html {
   display: none;
   background-color: white;
   animation: anim 300ms ease-in-out forwards;
+  align-items: center;
+  justify-content: center;
 }
 .container .iphone_mockup .iphone_border .open_app_section.open {
-  display: block;
+  display: flex;
 }
 .container .iphone_mockup .iphone_border .open_app_section.close {
   display: none;
@@ -277,6 +276,11 @@ html {
   position: fixed;
   top: 3px;
   width: 100%;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .open_status {
+    width: 320px;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .open_status img {
   width: 100%;
@@ -292,19 +296,65 @@ html {
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training.open,
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training.open {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .software_training.open,
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon {
-  margin-left: 102px;
   width: 90px;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon p {
+  font-size: 15px;
+  font-weight: 900;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon p {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon img {
   width: 100%;
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content {
   margin-top: 30px;
+  height: 50%;
+  overflow: auto;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content {
+    margin: 0;
+    height: 80%;
+    overflow: auto;
+    /* Optional: show position indicator in red */
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content::-webkit-scrollbar-thumb {
+    background: #FF0000;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content ul {
   margin: 0;
@@ -313,10 +363,23 @@ html {
   color: #673bb7;
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon {
-  margin-left: 60px;
   width: 150px;
   border-radius: 10px;
   overflow: hidden;
+}
+.container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon p {
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon p {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon img {
   width: 100%;
@@ -326,6 +389,11 @@ html {
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .course_content ul {
   margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .software_training .course_content ul {
+    font-size: 25px;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .course_content ul li {
   color: black;

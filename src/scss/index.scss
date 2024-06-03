@@ -40,8 +40,9 @@ html {
         animation: anim 500ms ease-in-out forwards;
 
         @media(min-width:769px){
-            width: 640px;
-            height: 320px;
+            width: 90%;
+            height: 90%;
+            padding: 13px 5px;
         }
 
         .notch {
@@ -58,9 +59,9 @@ html {
             gap: 5px;
 
             @media(min-width:769px){
-                right: -24px;
-                transform: rotate(90deg);
-                top: 140px;
+                // right: -24px;
+                // transform: rotate(90deg);
+                top: 20px;
             }
 
             .speaker {
@@ -97,7 +98,8 @@ html {
             @media(min-width: 769px){
                 transform: rotate(90deg);
                 right: 248px;
-                top: 281px;
+                bottom: -42px;
+                top: auto;
             }
         }
 
@@ -170,8 +172,8 @@ html {
             overflow: hidden;
 
             @media(min-width:769px){
-                width: 615px;
-                height: 295px;
+                width: 100%;
+                height: 100%;
             }
 
             .status_bar{
@@ -181,9 +183,9 @@ html {
 
                 @media(min-width:769px){
                     width: 325px;
-                    transform: rotate(90deg);
-                    top: 120px;
-                    right: -139px;
+                    // transform: rotate(90deg);
+                    // top: auto;
+                    // right: -139px;
                 }
 
                 img{
@@ -289,9 +291,11 @@ html {
                 display: none;
                 background-color: white;
                 animation: anim 300ms ease-in-out forwards;
+                align-items: center;
+                justify-content: center;
 
                 &.open{
-                    display: block;
+                    display: flex;
                 }
 
                 &.close{
@@ -302,6 +306,10 @@ html {
                     position: fixed;
                     top: 03px;
                     width: 100%;
+
+                    @media(min-width:769px){
+                        width: 320px;
+                    }
 
                     img{
                         width: 100%;
@@ -320,15 +328,46 @@ html {
 
                 .software_training.open,
                 .hardware_training.open {
-                    display: block;
+                    // display: block;
+                    display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+
+                    @media(min-width:769px){
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        // flex-direction: column;
+                    }
                 }
 
                 .hardware_training {
                     .st_icon {
-                        margin-left: 102px;
+                        // margin-left: 102px;
                         width: 90px;
                         border-radius: 10px;
                         overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        p{
+                            font-size: 15px;
+                            font-weight: 900;
+                        }
+                        
+
+                        @media(min-width:769px){
+                            width: 230px;
+                            p{
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
 
                         img {
                             width: 100%;
@@ -337,6 +376,25 @@ html {
 
                     .course_content {
                         margin-top: 30px;
+                        height: 50%;
+                        overflow: auto;
+
+                        @media(min-width:769px){
+                            margin: 0;
+                            height: 80%;
+                            overflow: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;  /* Remove scrollbar space */
+                                background: transparent;  /* Optional: just make scrollbar invisible */
+                            }
+                            /* Optional: show position indicator in red */
+                            &::-webkit-scrollbar-thumb {
+                                background: #FF0000;
+                            }
+                            
+                        }
+
                         ul {
                             margin: 0;
 
@@ -351,10 +409,25 @@ html {
 
                 .software_training {
                     .st_icon {
-                        margin-left: 60px;
+                        // margin-left: 60px;
                         width: 150px;
                         border-radius: 10px;
                         overflow: hidden;
+
+                        p{
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px){
+                            width: 230px;
+
+                            p{
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
 
                         img {
                             width: 100%;
@@ -365,6 +438,10 @@ html {
                         margin-top: 30px;
                         ul {
                             margin: 0;
+
+                            @media(min-width:769px){
+                                font-size: 25px;
+                            }
 
                             li {
                                 color: black;
