@@ -189,6 +189,7 @@ html {
   display: flex;
 }
 .container .iphone_mockup .iphone_border .app_section .app_container {
+  height: 80px;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -252,6 +253,7 @@ html {
   display: block;
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon {
+  margin-left: 102px;
   width: 90px;
   border-radius: 10px;
   overflow: hidden;
@@ -269,6 +271,7 @@ html {
   color: #673bb7;
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon {
+  margin-left: 60px;
   width: 150px;
   border-radius: 10px;
   overflow: hidden;
