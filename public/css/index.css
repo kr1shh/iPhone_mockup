@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "sf-pro";
   src: url("../../src/assets/Fonts/SF-Pro.ttf") format("truetype");
@@ -22,6 +23,7 @@ html {
   font-family: "sf-pro";
   color: white;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 .container .iphone_mockup {
   position: relative;
@@ -145,7 +147,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: rgb(255, 255, 255);
   width: 295px;
   height: 615px;
@@ -223,13 +224,17 @@ html {
 }
 .container .iphone_mockup .iphone_border .app_section {
   width: 100%;
-  height: 85%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 45px;
 }
 @media (min-width: 769px) {
   .container .iphone_mockup .iphone_border .app_section {
+    display: flex;
+    flex-wrap: wrap;
     width: 95%;
     gap: 40px;
+    margin-top: 80px;
   }
 }
 .container .iphone_mockup .iphone_border .app_section .app_container {
@@ -237,6 +242,8 @@ html {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .container .iphone_mockup .iphone_border .app_section .app_container:nth-child(1) .app {
   background-image: url(../../src/assets/icons/hardware_trainging.jpg);
@@ -250,12 +257,54 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(3) .app {
+  background-image: url(../../src/assets/icons/Multimeter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(4) .app {
+  background-image: url(../../src/assets/icons/BGAWorkStation.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(5) .app {
+  background-image: url(../../src/assets/icons/cro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(6) .app {
+  background-image: url(../../src/assets/icons/DCPowerSupply.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(7) .app {
+  background-image: url(../../src/assets/icons/SolderingIron.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .iphone_mockup .iphone_border .app_section .app_container:nth-child(8) .app {
+  background-image: url(../../src/assets/icons/SMDReworkStation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container .iphone_mockup .iphone_border .app_section .app_container .app {
-  width: 55px;
-  height: 55px;
+  width: 53px;
+  height: 53px;
   background-color: black;
   border-radius: 10px;
   cursor: pointer;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .app_section .app_container .app {
+    width: 55px;
+    height: 55px;
+  }
 }
 .container .iphone_mockup .iphone_border .app_section .app_container span {
   margin-top: 5px;
@@ -343,7 +392,12 @@ html {
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon img {
   width: 100%;
-  border-radius: 45px;
+  border-radius: 20px;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training .st_icon img {
+    bord◘er-radius: 45px;
+  }
 }
 .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content {
   margin-top: 30px;
@@ -385,6 +439,7 @@ html {
   gap: 20px;
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .st_icon p {
+  color: white;
   font-size: 15px;
   font-weight: 900;
   margin: 0;
