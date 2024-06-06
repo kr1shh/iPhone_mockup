@@ -113,8 +113,13 @@ html {
 @media (min-width: 769px) {
   .container .iphone_mockup .volume_btn {
     transform: rotate(90deg);
-    right: -720px;
+    right: -531px;
     top: -51px;
+  }
+}
+@media (min-width: 1024px) {
+  .container .iphone_mockup .volume_btn {
+    right: -769px;
   }
 }
 .container .iphone_mockup .volume_btn .up {
@@ -341,7 +346,13 @@ html {
   width: 100%;
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training,
-.container .iphone_mockup .iphone_border .open_app_section .hardware_training {
+.container .iphone_mockup .iphone_border .open_app_section .hardware_training,
+.container .iphone_mockup .iphone_border .open_app_section .multimeter,
+.container .iphone_mockup .iphone_border .open_app_section .bga,
+.container .iphone_mockup .iphone_border .open_app_section .cro,
+.container .iphone_mockup .iphone_border .open_app_section .dc,
+.container .iphone_mockup .iphone_border .open_app_section .soldering,
+.container .iphone_mockup .iphone_border .open_app_section .rework {
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -349,7 +360,13 @@ html {
   color: black;
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training.open,
-.container .iphone_mockup .iphone_border .open_app_section .hardware_training.open {
+.container .iphone_mockup .iphone_border .open_app_section .hardware_training.open,
+.container .iphone_mockup .iphone_border .open_app_section .multimeter.open,
+.container .iphone_mockup .iphone_border .open_app_section .bga.open,
+.container .iphone_mockup .iphone_border .open_app_section .cro.open,
+.container .iphone_mockup .iphone_border .open_app_section .dc.open,
+.container .iphone_mockup .iphone_border .open_app_section .soldering.open,
+.container .iphone_mockup .iphone_border .open_app_section .rework.open {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,7 +375,13 @@ html {
 }
 @media (min-width: 769px) {
   .container .iphone_mockup .iphone_border .open_app_section .software_training.open,
-  .container .iphone_mockup .iphone_border .open_app_section .hardware_training.open {
+  .container .iphone_mockup .iphone_border .open_app_section .hardware_training.open,
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter.open,
+  .container .iphone_mockup .iphone_border .open_app_section .bga.open,
+  .container .iphone_mockup .iphone_border .open_app_section .cro.open,
+  .container .iphone_mockup .iphone_border .open_app_section .dc.open,
+  .container .iphone_mockup .iphone_border .open_app_section .soldering.open,
+  .container .iphone_mockup .iphone_border .open_app_section .rework.open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,8 +435,10 @@ html {
     /* Optional: show position indicator in red */
   }
   .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content::-webkit-scrollbar {
-    width: 0; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
   }
   .container .iphone_mockup .iphone_border .open_app_section .hardware_training .course_content::-webkit-scrollbar-thumb {
     background: #FF0000;
@@ -474,6 +499,332 @@ html {
 }
 .container .iphone_mockup .iphone_border .open_app_section .software_training .course_content ul li::marker {
   color: #ffffff;
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .bga .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .bga .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .bga .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .bga .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .bga .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .bga .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .bga .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .bga .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .cro .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .cro .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .cro .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .cro .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .cro .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .cro .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .cro .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .cro .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .dc .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .dc .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .dc .st_icon {
+    width: 230px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .dc .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .dc .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .dc .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .dc .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .dc .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon {
+    width: 330px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+@media (max-width: 768px) {
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .st_icon img {
+    border-radius: 17px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .soldering .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .soldering .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .rework .st_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 20px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .rework .st_icon p {
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .rework .st_icon {
+    width: 341px;
+  }
+  .container .iphone_mockup .iphone_border .open_app_section .rework .st_icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .rework .st_icon img {
+  width: 100%;
+  border-radius: 45px;
+}
+@media (max-width: 640px) {
+  .container .iphone_mockup .iphone_border .open_app_section .rework .st_icon img {
+    border-radius: 17px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .rework .course_content {
+  margin-top: 30px;
+}
+.container .iphone_mockup .iphone_border .open_app_section .rework .course_content p {
+  margin: 0;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .rework .course_content p {
+    font-size: 15px;
+    color: white;
+    width: 350px;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content div,
+.container .iphone_mockup .iphone_border .open_app_section .bga .course_content div,
+.container .iphone_mockup .iphone_border .open_app_section .cro .course_content div,
+.container .iphone_mockup .iphone_border .open_app_section .dc .course_content div,
+.container .iphone_mockup .iphone_border .open_app_section .soldering .course_content div,
+.container .iphone_mockup .iphone_border .open_app_section .rework .course_content div {
+  font-size: 12px;
+  border-radius: 15px;
+  padding: 18px;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content div,
+  .container .iphone_mockup .iphone_border .open_app_section .bga .course_content div,
+  .container .iphone_mockup .iphone_border .open_app_section .cro .course_content div,
+  .container .iphone_mockup .iphone_border .open_app_section .dc .course_content div,
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .course_content div,
+  .container .iphone_mockup .iphone_border .open_app_section .rework .course_content div {
+    background-color: white;
+  }
+}
+.container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content div p,
+.container .iphone_mockup .iphone_border .open_app_section .bga .course_content div p,
+.container .iphone_mockup .iphone_border .open_app_section .cro .course_content div p,
+.container .iphone_mockup .iphone_border .open_app_section .dc .course_content div p,
+.container .iphone_mockup .iphone_border .open_app_section .soldering .course_content div p,
+.container .iphone_mockup .iphone_border .open_app_section .rework .course_content div p {
+  font-size: 15px;
+  color: white;
+}
+@media (min-width: 769px) {
+  .container .iphone_mockup .iphone_border .open_app_section .multimeter .course_content div p,
+  .container .iphone_mockup .iphone_border .open_app_section .bga .course_content div p,
+  .container .iphone_mockup .iphone_border .open_app_section .cro .course_content div p,
+  .container .iphone_mockup .iphone_border .open_app_section .dc .course_content div p,
+  .container .iphone_mockup .iphone_border .open_app_section .soldering .course_content div p,
+  .container .iphone_mockup .iphone_border .open_app_section .rework .course_content div p {
+    font-size: 21px;
+    color: black;
+  }
 }
 
 @keyframes anim {

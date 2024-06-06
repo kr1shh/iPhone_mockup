@@ -40,7 +40,7 @@ html {
         filter: drop-shadow(12px 19px 16px #000000);
         animation: anim 500ms ease-in-out forwards;
 
-        @media(min-width:769px){
+        @media(min-width:769px) {
             width: 90%;
             height: 90%;
             padding: 13px 5px;
@@ -59,7 +59,7 @@ html {
             border-radius: 50px;
             gap: 5px;
 
-            @media(min-width:769px){
+            @media(min-width:769px) {
                 // right: -24px;
                 // transform: rotate(90deg);
                 top: 20px;
@@ -96,7 +96,7 @@ html {
             background: linear-gradient(90deg, transparent, #99840a);
             border-radius: 10px 20px 20px 10px;
 
-            @media(min-width: 769px){
+            @media(min-width: 769px) {
                 transform: rotate(90deg);
                 right: 248px;
                 bottom: -42px;
@@ -114,11 +114,15 @@ html {
             justify-content: center;
             gap: 10px;
             flex-direction: column;
-            
-            @media(min-width: 769px){
+
+            @media(min-width: 769px) {
                 transform: rotate(90deg);
-                right: -720px;
+                right: -531px;
                 top: -51px;
+            }
+
+            @media(min-width:1024px){
+                right: -769px;
             }
 
 
@@ -149,7 +153,7 @@ html {
             display: none;
             cursor: pointer;
 
-            &.open{
+            &.open {
                 display: block;
             }
         }
@@ -172,24 +176,24 @@ html {
             position: relative;
             overflow: hidden;
 
-            @media(min-width:769px){
+            @media(min-width:769px) {
                 width: 100%;
                 height: 100%;
             }
 
-            .status_bar{
+            .status_bar {
                 position: absolute;
                 top: 3px;
                 width: 100%;
 
-                @media(min-width:769px){
+                @media(min-width:769px) {
                     width: 325px;
                     // transform: rotate(90deg);
                     // top: auto;
                     // right: -139px;
                 }
 
-                img{
+                img {
                     width: 100%;
                 }
             }
@@ -208,14 +212,15 @@ html {
                 background-color: rgba(255, 255, 255, 0.3);
                 gap: 10px;
 
-                a{
+                a {
                     .app {
                         width: 55px;
                         height: 55px;
                         border-radius: 10px;
                     }
+
                     &:nth-child(1) {
-                        .app{
+                        .app {
                             background-image: url(../../src/assets/icons/phone.png);
                             background-repeat: no-repeat;
                             background-position: center;
@@ -224,7 +229,7 @@ html {
                     }
 
                     &:nth-child(2) {
-                        .app{
+                        .app {
                             background-image: url(../../src/assets/icons/safari.png);
                             background-repeat: no-repeat;
                             background-position: center;
@@ -233,7 +238,7 @@ html {
                     }
 
                     &:nth-child(3) {
-                        .app{
+                        .app {
                             background-image: url(../../src/assets/icons/whatsapp.png);
                             background-repeat: no-repeat;
                             background-position: center;
@@ -242,7 +247,7 @@ html {
                     }
 
                     &:nth-child(4) {
-                        .app{
+                        .app {
                             background-image: url(../../src/assets/icons/facebook.png);
                             background-repeat: no-repeat;
                             background-position: center;
@@ -251,25 +256,25 @@ html {
                     }
                 }
 
-                
+
             }
 
-            .app_section{
+            .app_section {
                 width: 100%;
                 // height: 85%;
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(4, 1fr);
                 margin-top: 45px;
 
-                @media(min-width:769px){
+                @media(min-width:769px) {
                     display: flex;
                     flex-wrap: wrap;
                     width: 95%;
                     gap: 40px;
                     margin-top: 80px;
                 }
-                
-                .app_container{
+
+                .app_container {
                     height: 86px;
                     display: flex;
                     flex-direction: column;
@@ -277,64 +282,71 @@ html {
                     justify-content: center;
                     align-items: center;
 
-                    &:nth-child(1){
-                        .app{
+                    &:nth-child(1) {
+                        .app {
                             background-image: url(../../src/assets/icons/hardware_trainging.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(2){
-                        .app{
+
+                    &:nth-child(2) {
+                        .app {
                             background-image: url(../../src/assets/icons/software_trainging_.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(3){
-                        .app{
+
+                    &:nth-child(3) {
+                        .app {
                             background-image: url(../../src/assets/icons/Multimeter.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(4){
-                        .app{
+
+                    &:nth-child(4) {
+                        .app {
                             background-image: url(../../src/assets/icons/BGAWorkStation.png);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(5){
-                        .app{
+
+                    &:nth-child(5) {
+                        .app {
                             background-image: url(../../src/assets/icons/cro.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(6){
-                        .app{
+
+                    &:nth-child(6) {
+                        .app {
                             background-image: url(../../src/assets/icons/DCPowerSupply.png);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(7){
-                        .app{
+
+                    &:nth-child(7) {
+                        .app {
                             background-image: url(../../src/assets/icons/SolderingIron.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
                     }
-                    &:nth-child(8){
-                        .app{
+
+                    &:nth-child(8) {
+                        .app {
                             background-image: url(../../src/assets/icons/SMDReworkStation.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
@@ -342,19 +354,20 @@ html {
                         }
                     }
 
-                    .app{
+                    .app {
                         width: 53px;
                         height: 53px;
                         background-color: black;
                         border-radius: 10px;
                         cursor: pointer;
 
-                        @media(min-width: 769px){
+                        @media(min-width: 769px) {
                             width: 55px;
                             height: 55px;
                         }
                     }
-                    span{
+
+                    span {
                         margin-top: 5px;
                         text-align: center;
                         font-size: 12px;
@@ -362,7 +375,7 @@ html {
                 }
             }
 
-            .open_app_section{
+            .open_app_section {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -372,30 +385,36 @@ html {
                 align-items: center;
                 justify-content: center;
 
-                &.open{
+                &.open {
                     display: flex;
                 }
 
-                &.close{
+                &.close {
                     display: none;
                 }
 
-                .open_status{
+                .open_status {
                     position: fixed;
                     top: 03px;
                     width: 100%;
 
-                    @media(min-width:769px){
+                    @media(min-width:769px) {
                         width: 320px;
                     }
 
-                    img{
+                    img {
                         width: 100%;
                     }
                 }
 
                 .software_training,
-                .hardware_training {
+                .hardware_training,
+                .multimeter,
+                .bga,
+                .cro,
+                .dc,
+                .soldering,
+                .rework {
                     width: 100%;
                     height: 100%;
                     overflow-y: auto;
@@ -405,15 +424,21 @@ html {
                 }
 
                 .software_training.open,
-                .hardware_training.open {
+                .hardware_training.open,
+                .multimeter.open,
+                .bga.open,
+                .cro.open,
+                .dc.open,
+                .soldering.open,
+                .rework.open {
                     // display: block;
                     display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        background: linear-gradient(180deg, rgba(113,97,239,1) 0%, rgba(149,127,239,1) 100%);
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background: linear-gradient(180deg, rgba(113, 97, 239, 1) 0%, rgba(149, 127, 239, 1) 100%);
 
-                    @media(min-width:769px){
+                    @media(min-width:769px) {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -425,7 +450,6 @@ html {
 
                 .hardware_training {
                     .st_icon {
-                        // margin-left: 102px;
                         width: 90px;
                         border-radius: 10px;
                         overflow: hidden;
@@ -435,16 +459,17 @@ html {
                         flex-direction: column;
                         margin-top: 20px;
 
-                        p{
+                        p {
                             color: white;
                             font-size: 15px;
                             font-weight: 900;
                         }
-                        
 
-                        @media(min-width:769px){
+
+                        @media(min-width:769px) {
                             width: 230px;
-                            p{
+
+                            p {
                                 font-size: 20px;
                                 font-weight: 900;
                             }
@@ -453,7 +478,8 @@ html {
                         img {
                             width: 100%;
                             border-radius: 20px;
-                            @media(min-width: 769px){
+
+                            @media(min-width: 769px) {
                                 bord◘er-radius: 45px;
                             }
                         }
@@ -464,20 +490,23 @@ html {
                         height: 50%;
                         overflow: auto;
 
-                        @media(min-width:769px){
+                        @media(min-width:769px) {
                             margin: 0;
                             height: 80%;
                             overflow: auto;
 
                             &::-webkit-scrollbar {
-                                width: 0;  /* Remove scrollbar space */
-                                background: transparent;  /* Optional: just make scrollbar invisible */
+                                width: 0;
+                                /* Remove scrollbar space */
+                                background: transparent;
+                                /* Optional: just make scrollbar invisible */
                             }
+
                             /* Optional: show position indicator in red */
                             &::-webkit-scrollbar-thumb {
                                 background: #FF0000;
                             }
-                            
+
                         }
 
                         ul {
@@ -485,6 +514,7 @@ html {
 
                             li {
                                 color: white;
+
                                 &::marker {
                                     color: #ffffff;
                                 }
@@ -506,17 +536,17 @@ html {
                         gap: 20px;
 
 
-                        p{
+                        p {
                             color: white;
                             font-size: 15px;
                             font-weight: 900;
                             margin: 0;
                         }
 
-                        @media(min-width:769px){
+                        @media(min-width:769px) {
                             width: 230px;
 
-                            p{
+                            p {
                                 color: white;
                                 font-size: 20px;
                                 font-weight: 900;
@@ -531,17 +561,379 @@ html {
 
                     .course_content {
                         margin-top: 30px;
+
                         ul {
                             margin: 0;
 
-                            @media(min-width:769px){
+                            @media(min-width:769px) {
                                 font-size: 25px;
                             }
 
                             li {
                                 color: rgb(255, 255, 255);
+
                                 &::marker {
                                     color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .multimeter {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 230px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .bga {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 230px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .cro {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 230px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .dc {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 150px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 230px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .soldering {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 260px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 330px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+
+                            @media(max-width:768px){
+                                border-radius: 17px;
+                            }
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .rework {
+                    .st_icon {
+                        // margin-left: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 250px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        gap: 20px;
+
+
+                        p {
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        @media(min-width:769px) {
+                            width: 341px;
+
+                            p {
+                                color: white;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 45px;
+
+                            @media(max-width:640px){
+                                border-radius: 17px;
+                            }
+                        }
+                    }
+
+                    .course_content {
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0;
+                            width: 250px;
+                            text-align: center;
+                            color: white;
+
+                            @media(min-width:769px) {
+                                font-size: 15px;
+                                color: white;
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+
+                .multimeter,
+                .bga,
+                .cro,
+                .dc,
+                .soldering,
+                .rework{
+                    .course_content{
+                        div{
+                            font-size: 12px;
+                            border-radius: 15px;
+                            padding: 18px;
+
+                            @media(min-width:769px){
+                                background-color: white;
+                            }
+                            p{
+                                font-size: 15px;
+                                color: white;
+
+                                @media(min-width:769px){
+                                    font-size: 21px;
+                                    color: black;
                                 }
                             }
                         }
@@ -554,24 +946,24 @@ html {
 
 
 @keyframes anim {
-    from{
+    from {
         opacity: 0;
         transform: translateY(30px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes pop_up {
-    from{
+    from {
         opacity: 0;
         transform: translateY(30px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
